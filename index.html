@@ -18,7 +18,7 @@
 </head>
 <body class="bg-custom-beige">
 
-
+<header>
   <!-- Banner and Navbar combined -->
 
   <div class="header-container d-flex flex-column fixed-top">
@@ -30,7 +30,7 @@
     </div>
     
     <!-- Navbar below -->
-    <nav class="navbar navbar-expand-lg w-100 bg-light bg-opacity-75">
+    <nav role="navigation" class="navbar navbar-expand-lg w-100 bg-light bg-opacity-75">
       <!-- Navbar content -->
       <a class="navbar-brand px-5" href="#">RADIANT</a>
       <!-- Navigation items -->
@@ -52,12 +52,12 @@
       </div>
     </nav>
   </div>
-
+</header>
     <!-- Hero Section -->
 
     <!-- Headings, Hero, Images (or cards) -->
 
-
+<main>
     <section class="hero position-relative min-vh-100 d-flex flex-column justify-content-center align-items-center">
       <!-- Separate background div that gets blurred -->
       <div class="hero-background"></div>
@@ -80,11 +80,11 @@
 
     <!-- Table of service options -->
 
-    <div class="container-fluid my-5">
+    <!-- <div class="container-fluid my-5">
       <div class="row justify-content-center my-5">
         <div class="col-12 col-xl-10">
           <div class="p-3 my-3 p-md-5 rounded-2">
-          <!--card component required to round corners, inspiration page on NOVOS didn't actually use a table-->
+          card component required to round corners, inspiration page on NOVOS didn't actually use a table
           <div class="card rounded-4 overflow-hidden shadow-md">
             <div class="card-body p-0 ">
               <table class="table table-bordered m-0">
@@ -138,37 +138,226 @@
         </div>
       </div>
       </div>
+    </div> -->
+
+<!-- Table 2 of Sservices options with accordian for mobile -->
+
+  <section class="container-fluid my-5 main-table">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <!-- Desktop Table (Hidden on Mobile) -->
+        <div class="d-none d-md-block">
+          <div class="card rounded-4 overflow-hidden shadow-md">
+            <div class="card-body p-0">
+              <table class="table table-bordered m-0">
+                <thead>
+                  <tr>
+                    <th class="bg-light border" style="width: 34%"></th>
+                    <th class="text-center border bg-danger-subtle" style="width: 33%;">
+                      <img src="../images/radiantaddgirl.png" alt="Radiant" class="img-fluid" style="max-height: 200px; border-radius: 25px;">
+                      <p class="text-dark mb-0"><strong>BRIGHTER FOR LONGER™</strong></p>
+                    </th>
+                    <th class="text-center border bg-light" style="width: 33%;">
+                      <h4 class="text-secondary">Majority of<br>Competitors</h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fw-bold border bg-light">FEATURE</td>
+                    <td class="border bg-danger-subtle"></td>
+                    <td class="border bg-light"></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold border bg-light">Rooted In Science</td>
+                    <td class="text-center border bg-danger-subtle">Backed by Harvard, MIT research</td>
+                    <td class="text-center border bg-light">Follow trends, not science</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold border bg-light">Product Range</td>
+                    <td class="text-center border bg-danger-subtle">Comprehensive, targeted solutions</td>
+                    <td class="text-center border bg-light">Limited, general wellness</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold border bg-light">Ingredient Quality</td>
+                    <td class="text-center border bg-danger-subtle">Premium, clinically vetted</td>
+                    <td class="text-center border bg-light">Basic, varies by product</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold border bg-light">Reputation</td>
+                    <td class="text-center border bg-danger-subtle">#1 Validated For Longevity</td>
+                    <td class="text-center border bg-light">Limited scientific credibility</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold border bg-light">Effectiveness</td>
+                    <td class="text-center border bg-danger-subtle">Proven in studies, top-tier efficacy</td>
+                    <td class="text-center border bg-light">Mixed reviews, no/little evidence</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Accordion (Hidden on Desktop) -->
+        <div class="d-md-none">
+          <!-- Headers for Mobile -->
+          <div class="row mb-4 text-center">
+            <div class="col-6">
+              <div class="bg-danger-subtle p-2 rounded-top">
+                <img src="../images/radiantaddgirl.png" alt="Radiant" class="img-fluid mb-2" style="max-height: 100px; border-radius: 15px;">
+                <p class="mb-0 small fw-bold">BRIGHTER FOR LONGER™</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bg-light p-2 rounded-top d-flex flex-column justify-content-center h-100">
+                <p class="mb-0 small fw-bold text-secondary">Majority of Competitors</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accordion for Features -->
+          <div class="accordion" id="comparisonAccordion">
+            <!-- Feature 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  Rooted In Science
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#comparisonAccordion">
+                <div class="accordion-body p-0">
+                  <div class="row g-0">
+                    <div class="col-6 p-2 bg-danger-subtle text-center">
+                      Backed by Harvard, MIT research
+                    </div>
+                    <div class="col-6 p-2 bg-light text-center">
+                      Follow trends, not science
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Product Range
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#comparisonAccordion">
+                <div class="accordion-body p-0">
+                  <div class="row g-0">
+                    <div class="col-6 p-2 bg-danger-subtle text-center">
+                      Comprehensive, targeted solutions
+                    </div>
+                    <div class="col-6 p-2 bg-light text-center">
+                      Limited, general wellness
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Ingredient Quality
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#comparisonAccordion">
+                <div class="accordion-body p-0">
+                  <div class="row g-0">
+                    <div class="col-6 p-2 bg-danger-subtle text-center">
+                      Premium, clinically vetted
+                    </div>
+                    <div class="col-6 p-2 bg-light text-center">
+                      Basic, varies by product
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Reputation
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#comparisonAccordion">
+                <div class="accordion-body p-0">
+                  <div class="row g-0">
+                    <div class="col-6 p-2 bg-danger-subtle text-center">
+                      #1 Validated For Longevity
+                    </div>
+                    <div class="col-6 p-2 bg-light text-center">
+                      Limited scientific credibility
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Effectiveness
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#comparisonAccordion">
+                <div class="accordion-body p-0">
+                  <div class="row g-0">
+                    <div class="col-6 p-2 bg-danger-subtle text-center">
+                      Proven in studies, top-tier efficacy
+                    </div>
+                    <div class="col-6 p-2 bg-light text-center">
+                      Mixed reviews, no/little evidence
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
     <!-- Sign Up -->
 
-
-      <div class="form-container shadow-md pb-5 mb-5">
-        <h1>Join our Community!</h1>
-        <form>
-            <div class="mb-3">
-                <label for="username" class="form-label">Username *</label>
-                <input type="text" class="form-control" id="username" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address *</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password *</label>
-                <input type="password" class="form-control" id="password" required>
-            </div>
-            <div class="mb-3 form-check">
+  <section>
+        <div class="form-container shadow-md pb-5 mb-5">
+          <h1>Join our Community!</h1>
+          <form>
+              <div class="mb-3">
+                  <label for="username" class="form-label">Username *</label>
+                  <input type="text" class="form-control" id="username" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email address *</label>
+                  <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="password" class="form-label">Password *</label>
+                  <input type="password" class="form-control" id="password" required>
+              </div>
+              <div class="privacy-text">
+                  Data used in accordance with our <a href="#" class="privacy-link">privacy policy</a>.
+              </div>
+              <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="terms">
-                <label class="form-check-label" for="terms"></label>
+                <label class="form-check-label" for="terms">I accept privacy terms.</label>
             </div>
-            <div class="privacy-text">
-                Data used in accordance with our <a href="#" class="privacy-link">privacy policy</a>.
-            </div>
-            <button id="submit" type="submit" class="btn btn-register">Register</button>
-        </form>
-    </div>
-
+              <button id="submit" type="submit" class="btn btn-register">Register</button>
+          </form>
+      </div>
+  </section>
+</main>
     <!-- Footer -->
     <footer class="bg-black text-white pt-5">
       <div class="container">
