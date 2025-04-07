@@ -16,12 +16,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/index.css">
 </head>
-<body class="bg-custom-beige">
+<body class="bg-light">
 
 <header>
   <!-- Banner and Navbar combined -->
 
-  <div class="header-container d-flex flex-column fixed-top">
+  <div class="d-flex flex-column fixed-top">
     <!-- Banner first -->
      <!-- I had to flip my thinking from putting in a Hero that moved to making the banner + nav fixed -->
     <div class="banner w-100 text-center py-3">
@@ -58,13 +58,13 @@
     <!-- Headings, Hero, Images (or cards) -->
 
 <main>
-    <section class="hero position-relative min-vh-100 d-flex flex-column justify-content-center align-items-center">
+    <section class="hero position-relative min-vh-100 d-flex flex-column justify-content-center align-items-center pb-5">
       <!-- Separate background div that gets blurred -->
       <div class="hero-background"></div>
       
       <!-- Hero content -->
       <div class="hero-content">
-        <h1 class="text-white fs-huge">Live Brighter for Longer™</h1>
+        <h1 class="text-white display-4 text-secondary mb-4 fw-light ">Live Brighter for Longer™</h1>
         <button id="hero-btn" class="btn bg-custom-orange text-black rounded-4 fs-3">Sign-up Below!</button>
       </div>
       
@@ -76,73 +76,9 @@
     </section>
     
 
-
-
-    <!-- Table of service options -->
-
-    <!-- <div class="container-fluid my-5">
-      <div class="row justify-content-center my-5">
-        <div class="col-12 col-xl-10">
-          <div class="p-3 my-3 p-md-5 rounded-2">
-          card component required to round corners, inspiration page on NOVOS didn't actually use a table
-          <div class="card rounded-4 overflow-hidden shadow-md">
-            <div class="card-body p-0 ">
-              <table class="table table-bordered m-0">
-                <thead>
-                  <tr>
-                    <th class="bg-light border" style="width: 34%"></th>
-                    <th class="text-center border bg-danger-subtle" style="width: 33%;">
-                      <img src="../images/radiantaddgirl.png" alt="Radiant" class="img-fluid" style="max-height: 200px border; border-radius: 25px;">
-                      <p class="text-dark mb-0"><strong>BRIGHTER FOR LONGER™</strong></p>
-                    </th>
-                    <th class="text-center border bg-light" style="width: 33%;">
-                      <h4 class="text-secondary">Majority of<br>Competitors</h4>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="fw-bold border bg-light">FEATURE</td>
-                    <td class="border bg-danger-subtle"></td>
-                    <td class="border bg-light"></td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold border bg-light">Rooted In Science</td>
-                    <td class="text-center border bg-danger-subtle">Backed by Harvard, MIT research</td>
-                    <td class="text-center border bg-light">Follow trends, not science</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold border bg-light">Product Range</td>
-                    <td class="text-center border bg-danger-subtle">Comprehensive, targeted solutions</td>
-                    <td class="text-center border bg-light">Limited, general wellness</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold border bg-light">Ingredient Quality</td>
-                    <td class="text-center border bg-danger-subtle">Premium, clinically vetted</td>
-                    <td class="text-center border bg-light">Basic, varies by product</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold border bg-light">Reputation</td>
-                    <td class="text-center border bg-danger-subtle">#1 Validated For Longevity</td>
-                    <td class="text-center border bg-light">Limited scientific credibility</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold border bg-light">Effectiveness</td>
-                    <td class="text-center border bg-danger-subtle">Proven in studies, top-tier efficacy</td>
-                    <td class="text-center border bg-light">Mixed reviews, no/little evidence</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div> -->
-
 <!-- Table 2 of Sservices options with accordian for mobile -->
 
-  <section class="container-fluid my-5 main-table">
+  <section class="container-fluid my-5 py-5 main-table">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <!-- Desktop Table (Hidden on Mobile) -->
@@ -331,8 +267,8 @@
     <!-- Sign Up -->
 
   <section>
-        <div class="form-container shadow-md pb-5 mb-5">
-          <h1>Join our Community!</h1>
+        <div class="form-container col-6 bg-white rounded-3 p-5 shadow-sm mx-auto m-5">
+          <h1 class="text-secondary mb-4 fw-light">Join our Community!</h1>
           <form>
               <div class="mb-3">
                   <label for="username" class="form-label">Username *</label>
@@ -346,14 +282,14 @@
                   <label for="password" class="form-label">Password *</label>
                   <input type="password" class="form-control" id="password" required>
               </div>
-              <div class="privacy-text">
-                  Data used in accordance with our <a href="#" class="privacy-link">privacy policy</a>.
+              <div class="my-2">
+                  Data used in accordance with our <a href="#" class="privacy-text">privacy policy</a>.
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="terms">
                 <label class="form-check-label" for="terms">I accept privacy terms.</label>
             </div>
-              <button id="submit" type="submit" class="btn btn-register">Register</button>
+              <button id="submit" type="submit" class="btn btn-dark">Register</button>
           </form>
       </div>
   </section>
@@ -361,7 +297,6 @@
     <!-- Footer -->
     <footer class="bg-black text-white pt-5">
       <div class="container">
-        <!-- Main Footer Content -->
         <div class="row mb-5">
           <!-- Shop Column -->
           <div class="col-md-3 small">

@@ -2,14 +2,14 @@
 
 ## Part 1: Bootstrap Website Requirements
 
-### Navigation Bar (3 points)
-- Create a responsive navbar with at least 3 links (Home, About, Contact, etc.)
-- Ensure it's responsive across different screen sizes
-- Utilize Bootstrap's built-in responsiveness features
+### Navigation Bar (3 points) x
+- Create a responsive navbar with at least 3 links (Home, About, Contact, etc.) x
+- Ensure it's responsive across different screen sizes x
+- Utilize Bootstrap's built-in responsiveness features x
 
-### Home Page (3 points)
-- Build a homepage that matches the feel of your chosen website
-- Include headings, images, and a hero section
+### Home Page (3 points) x
+- Build a homepage that matches the feel of your chosen website x
+- Include headings, images, and a hero section x
 
 ### Form Section (3 points) x
 - Create a single form (contact, sign-up, or booking) x
@@ -21,20 +21,20 @@
 - Could showcase event schedules, product comparisons, or price lists x
 - Ensure it fits well within your layout x
 
-### Bootstrap Components (3 points) 
+### Bootstrap Components (3 points)  x
 - Implement 3 different Bootstrap components x
 - Options include cards, carousel, modals, accordions, etc. x
 - Integrate them effectively to enhance your site design x
 
-### Responsive Design (2 points)
-- Ensure your site is fully responsive on both mobile and desktop
-- Test across different screen sizes
+### Responsive Design (2 points) x
+- Ensure your site is fully responsive on both mobile and desktop x
+- Test across different screen sizes x
 
-### Overall Presentation (2 points)
+### Overall Presentation (2 points) x
 - Create a polished site with consistent structure and design x
 - Pay attention to visual appeal and professional quality x
 
-## Part 2: JavaScript Functions (3 points)
+## Part 2: JavaScript Functions (3 points)  //////////
 
 - Write 4-5 JavaScript functions in a separate .js file
 - Each function should simulate a feature relevant to your website
@@ -48,10 +48,10 @@
 ### README File (3 points)
 - Create a detailed README.md with:
   - Description of the website you emulated  x
-  - Explanation of how you used Bootstrap components
-  - Summary of each JavaScript function and future integration plans
+  - Explanation of how you used Bootstrap components  //////////
+  - Summary of each JavaScript function and future integration plans  ////////
 
-### GitHub Repository Setup
+### GitHub Repository Setup x
 - Create a GitHub repository for your project x
 - Add all HTML, CSS, Bootstrap, and JavaScript files x
 - Ensure proper organization with clearly named files x
@@ -63,8 +63,8 @@
 - Create intuitive navigation across all pages x
 - Aim for exceptional quality ahead of schedule x
 - Make the portfolio polished and engaging for a professional audience x
-- Consider presenting your work via live showcase or recorded video --
-- Apply feedback for continuous improvement --
+- Consider presenting your work via live showcase or recorded video --  ////////////
+- Apply feedback for continuous improvement -- ////////////
 - Use CSS creatively for an elegant design x
 - Ensure all code is functional and bug-free x
 
