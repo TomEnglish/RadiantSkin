@@ -26,7 +26,7 @@
     return regex.test(phone);
   }
 
-  // Validate Password Strength
+  // Returns promo discount based on promo code
   function getPromoDiscount(promoCode) {
     const promos = {
       'RADIANT ME': 20,
@@ -34,6 +34,8 @@
       'SKINHEALTH': 15,
       'WELCOME10': 10
     }
+      
+  return promos[promoCode.toUpperCase()] || 0;
   }
 
   // Validate Promo Code as active/valid
@@ -43,12 +45,12 @@
   }
 
   // Validate Password features required
-  function isValidPassword(email) {
-    const hasUppercase = /[A-Z]/.test(email);
-    const hasLowercase = /[a-z]/.test(email);
-    const hasNumber = /\d/.test(email);
-    const hasSpecialChar = /[!@#$%^&*]/.test(email);
-    const isValidLength = email.length >= 8;
+  function isValidPassword(pwd) {
+    const hasUppercase = /[A-Z]/.test(pwd);
+    const hasLowercase = /[a-z]/.test(pwd);
+    const hasNumber = /\d/.test(pwd);
+    const hasSpecialChar = /[!@#$%^&*]/.test(pwd);
+    const isValidLength = pwd.length >= 8;
     return hasUppercase && hasLowercase && hasNumber && hasSpecialChar && isValidLength;
     
   }
